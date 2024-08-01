@@ -2,6 +2,7 @@
 <!-- index.html -->
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +15,7 @@
     <title>Agile Board Task Management</title>
 </head>
 
+
 <body>
     <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
     <nav class="side-bar" id="side-bar-div">
@@ -21,13 +23,14 @@
             <img id="logo" src="./assets/logo-dark.svg" alt="logo-dark">
         </div>
 
+
         <div class="boards-nav-links-div" id="boards-nav-links-div">
             <h4 id="headline-sidepanel">ALL BOARDS</h4>
         </div>
         <div class="side-bar-bottom">
             <div class="toggle-div">
                 <img src="./assets/icon-dark-theme.svg" id="icon-dark" alt="icon-dark-theme">
-                <input type="checkbox" id="switch" />
+                <input type="checkbox" id="theme-switch" value="0" />
                 <label for="switch" id="label-checkbox-theme"></label>
                 <img src="./assets/icon-light-theme.svg" id="icon-light" alt="icon-light-theme">
             </div>
@@ -40,6 +43,7 @@
     <button id="show-side-bar-btn">
         <img src="./assets/icon-show-sidebar.svg" alt="icon-show-sidebar">
     </button>
+
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
     <div id="layout">
@@ -59,6 +63,7 @@
                 <button class="editBtns" id="deleteBoardBtn">Delete Board</button>
             </div>
         </header>
+
 
         <div class="container">
             <main class="card-column-main">
@@ -93,6 +98,7 @@
         </div>
     </div>
 
+
     <!-- New Task Modal: Form for adding a new task. -->
     <form class="modal-window" id="new-task-modal-window">
         <h4 class="modal-title">Add New Task</h4>
@@ -118,8 +124,9 @@
         </div>
     </form>
 
+
     <!-- Edit Task Modal: Form for editing an existing task's details. -->
-    <div class="edit-task-modal-window">
+    <div class="edit-task-modal-window" id="edit-task-modal-window">
         <form id="edit-task-form">
             <div class="edit-task-div" id="edit-task-header">
                 <input type="text" id="edit-task-title-input" class="task-title-input" placeholder="Task Title">
@@ -145,10 +152,15 @@
     </div>
 
 
+
+
     <div id="filterDiv"></div>
+
 
     <!-- JavaScript Import -->
     <script type="module" src="./index.js"></script>
 </body>
 
+
 </html>
+

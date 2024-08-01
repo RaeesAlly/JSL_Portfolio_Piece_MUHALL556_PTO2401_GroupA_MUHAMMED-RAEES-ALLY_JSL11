@@ -5,6 +5,7 @@
   box-sizing: inherit;
 }
 
+
 :root {
   --primary-color: #2b2f37;
   --secondary-color: #21202c;
@@ -13,6 +14,7 @@
   --primary-box-shadow: 0px 8px 18px 0px rgba(45, 45, 60, 0.56);
 }
 
+
 .light-theme {
   --primary-color: #ffffff;
   --secondary-color: #e6e6e6;
@@ -20,6 +22,7 @@
   --secondary-font-color: #828fa3;
   --primary-box-shadow: 0px 8px 18px 0px rgba(176, 176, 188, 0.56);
 }
+
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -33,6 +36,7 @@ body {
   width: 100%;
 }
 
+
 #layout {
   /* position: fixed; */
   /* height: 100%; */
@@ -43,6 +47,7 @@ body {
   /* border: 2px solid green; */
   overflow-x: hidden
 }
+
 
 .side-bar {
   /*  */
@@ -62,6 +67,7 @@ body {
   width: 350px;
 }
 
+
 .boards-nav-links-div {
   display: flex;
   flex-direction: column;
@@ -69,6 +75,7 @@ body {
   gap: 18px;
   height: 200px;
 }
+
 
 #create-board-btn {
   /* order: -3; */
@@ -90,10 +97,13 @@ body {
   padding: 28px 12px 28px 50px;
 }
 
+
 .icon-new-board {
   filter: invert(21%) sepia(95%) saturate(5663%) hue-rotate(150deg)
     brightness(88%) contrast(88%);
 }
+
+
 
 
 .board-btn {
@@ -116,6 +126,7 @@ body {
   padding: 28px 12px 28px 50px;
 }
 
+
 .active {
   background-color: #219C90;
   color: white;
@@ -123,14 +134,17 @@ body {
   padding: 28px 12px 28px 50px;
 }
 
+
 .active .icon-board {
   filter: brightness(0) invert(1);
   /* Change the color of the icon to white */
 }
 
+
 #headline-sidepanel {
   padding: 0 12px 0 50px;
 }
+
 
 .column-head-div {
   display: flex;
@@ -138,23 +152,28 @@ body {
   gap: 10px;
 }
 
+
 #todo-dot {
   background-color: #D83F31;
 }
+
 
 #doing-dot {
   background-color: #E9B824;
 }
 
+
 #done-dot {
   background-color: #219C90;
 }
+
 
 h4 {
   color: var(--secondary-font-color);
   font-size: 14px;
   letter-spacing: 2px;
 }
+
 
 .dot {
   height: 15px;
@@ -164,12 +183,14 @@ h4 {
   display: inline-block;
 }
 
+
 .hide-side-bar-div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-left: 50px;
 }
+
 
 #show-side-bar-btn {
   border: none;
@@ -184,6 +205,7 @@ h4 {
   cursor: pointer;
 }
 
+
 #hide-side-bar-btn {
   font-family: inherit;
   color: var(--primary-font-color);
@@ -193,10 +215,12 @@ h4 {
   cursor: pointer;
 }
 
+
 h4 {
   margin-bottom: 0;
   margin-top: 0;
 }
+
 
 #side-logo-div {
   margin-top: 40px;
@@ -205,9 +229,11 @@ h4 {
   padding: 0 12px 0 50px;
 }
 
+
 #logo {
   width: 90%;
 }
+
 
 header {
   display: flex;
@@ -229,6 +255,7 @@ header {
   position: relative;
 }
 
+
 #add-new-task-btn {
   background-color: #219C90;
   color: white;
@@ -243,6 +270,7 @@ header {
   margin-right: 20px;
 }
 
+
 .container {
   display: flex;
   flex-direction: column;
@@ -255,10 +283,12 @@ header {
   box-sizing: border-box;
 }
 
+
 .card-column-main {
   display: flex;
   flex-direction: row;
 }
+
 
 .column-div {
   flex: 1;
@@ -270,6 +300,7 @@ header {
   padding-right: 50px;
   width: 400px;
 }
+
 
 .task-div {
   display: flex;
@@ -287,9 +318,11 @@ header {
   margin-bottom: 15px;
 }
 
+
 .p-task {
   margin-left: 25px;
 }
+
 
 .side-bar-bottom {
   display: flex;
@@ -300,7 +333,9 @@ header {
   margin-bottom: 40px;
 }
 
+
 /* Edit task */
+
 
 #create-task-btn,
 #cancel-add-task-btn {
@@ -308,10 +343,12 @@ header {
   flex: 1; /* This will make both buttons flex equally */
 }
 
+
 .button-group {
   display: flex;
   justify-content: space-between; /* This will space out the buttons evenly */
 }
+
 
 .button-group .submit-btn {
   flex: 1; /* This will make both buttons flex equally */
@@ -319,30 +356,36 @@ header {
   max-height: 60px;
 }
 
+
 .button-group .editBtns {
   flex-grow: 1; /* Allows the button to grow */
   margin: 0 10px; /* Add a margin between the buttons */
   padding: 100px 0; /* Adjust padding as necessary */
 }
 
+
 #cancel-add-task-btn {
   background-color: #ea5555;
 }
+
 
 #edit-task-header {
   display: flex;
   flex-direction: row;
 }
 
+
 .task-title {
   color: var(--primary-font-color);
   font-size: 18px;
 }
 
+
 .edit-task-description {
   color: var(--secondary-font-color);
   font-size: 16px;
 }
+
 
 #edit-task-status {
   height: 40px;
@@ -353,6 +396,7 @@ header {
   color: #fff;
 }
 
+
 .edit-task-div {
   margin-top: 1em;
   display: flex;
@@ -361,11 +405,13 @@ header {
   gap: 7px;
 }
 
+
 .edit-task-div.button-group {
   display: flex;
   flex-direction: row; /* Align children horizontally */
   justify-content: space-between; /* Space out the children evenly */
 }
+
 
 .edit-task-div.button-group {
   display: flex;
@@ -373,6 +419,7 @@ header {
   justify-content: space-between;
   padding: 0; /* Ensure no padding is pushing buttons out */
 }
+
 
 .edit-task-div.button-group .editBtns {
   flex: 1; /* Grow and shrink as needed */
@@ -382,11 +429,15 @@ header {
 }
 
 
+
+
 .edit-task-div.button-group .editBtns {
   flex: 1; /* flex-grow: 1, flex-shrink: 1, flex-basis: 0% */
   min-height: 60px;
   margin: 0 4px; /* Adjust as needed for spacing between buttons */
 }
+
+
 
 
 .edit-task-modal-window {
@@ -407,8 +458,10 @@ header {
   transition: all 0.3s ease-in;
 }
 
+
 .edit-btn {
   position: absolute;
+
 
   background: none;
   border: none;
@@ -418,21 +471,25 @@ header {
   font-weight: 700;
 }
 
+
 #edit-btn {
   top: 20px;
   right: 20px;
 }
+
 
 #edit-board-btn {
   top: 30px;
   right: 20px;
 }
 
+
 #three-dots-icon {
   display: inline;
   font-size: 35px;
   font-weight: 800;
 }
+
 
 #editBtnsDiv {
   border-radius: 5px;
@@ -451,6 +508,7 @@ header {
   width: 130px;
   display: none;
 }
+
 
 #editBoardDiv {
   position: absolute;
@@ -471,6 +529,7 @@ header {
   z-index: 5;
 }
 
+
 #save-task-changes-btn {
   background-color: #219C90;
   color: white;
@@ -480,6 +539,7 @@ header {
   font-weight: 600;
   cursor: pointer;
 }
+
 
 #cancel-edit-btn {
   background-color:#E9B824;
@@ -491,6 +551,7 @@ header {
   cursor: pointer;
 }
 
+
 #delete-task-btn {
   background-color:#ea5555;
   color: white;
@@ -501,19 +562,23 @@ header {
   cursor: pointer;
 }
 
+
 #deleteBoardBtn {
   color: var(--primary-font-color);
 }
+
 
 .deleteBoardWindowBtns {
   display: flex;
   justify-content: space-between;
 }
 
+
 #delete-board {
   width: 280px;
   background-color: #ea5555;
 }
+
 
 #cancel-btn {
   width: 280px;
@@ -521,14 +586,17 @@ header {
   color: var(--secondary-font-color);
 }
 
+
 #modal-board {
   color: #ea5555;
   font-weight: 700;
 }
 
+
 .board-modal-p {
   color: #9697a5;
 }
+
 
 .editBtns {
   flex: 1; /* This allows the buttons to grow and fill the space equally */
@@ -540,9 +608,11 @@ header {
   cursor: pointer;
 }
 
+
 #deleteTaskBtn {
   color: #ea5555;
 }
+
 
 h2 {
   font-size: 1.2em;
@@ -554,17 +624,21 @@ h2 {
   width: 100%;
 }
 
+
 /* textarea#edit-task-desc.input.edit-task-description-input {
   color: red;
 } */
 
+
 /* Modal Window */
+
 
 .modal-title {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
 }
+
 
 .modal-window {
   /* border: 5px solid red; */
@@ -588,15 +662,18 @@ h2 {
   transition: all 0.3s ease-in;
 }
 
+
 .label-modal-window {
   color: var(--primary-font-color);
   margin-top: 15px;
   margin-bottom: 10px;
 }
 
+
 .modal-title {
   color: var(--primary-font-color);
 }
+
 
 .input-div {
   display: flex;
@@ -605,21 +682,25 @@ h2 {
   width: 100%; /* Ensure full width */
 }
 
+
 .modal-input {
   background-color: var(--primary-color);
   border: 1px solid #424852;
   border-radius: 4px;
 }
 
+
 #title-input {
   height: 30px;
   font-size: 14px;
 }
 
+
 #title-input-edit-task {
   height: 30px;
   font-size: 14px;
 }
+
 
 #desc-input {
   font-size: 14px;
@@ -630,6 +711,7 @@ h2 {
   color: var(--primary-font-color);
 }
 
+
 #desc-input-edit-task {
   font-size: 14px;
   background-color: var(--primary-color);
@@ -639,10 +721,12 @@ h2 {
   color: var(--primary-font-color);
 }
 
+
 input#edit-task-title-input.task-title-input {
   font-weight: 700;
   margin-bottom: 15px;
 }
+
 
 #select-status {
   height: 40px;
@@ -652,6 +736,7 @@ input#edit-task-title-input.task-title-input {
   border-radius: 4px;
   color: var(--secondary-font-color);
 }
+
 
 #edit-select-status {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -664,6 +749,7 @@ input#edit-task-title-input.task-title-input {
   color: var(--secondary-font-color);
 }
 
+
 #edit-select-status-task {
   height: 40px;
   padding: 10px;
@@ -672,6 +758,7 @@ input#edit-task-title-input.task-title-input {
   border-radius: 4px;
   color: var(--secondary-font-color);
 }
+
 
 .submit-btn {
   background-color: #219C90;
@@ -688,6 +775,7 @@ input#edit-task-title-input.task-title-input {
   margin: 5px 0; /* Optional: adds a margin between buttons */
 }
 
+
 ::placeholder {
   color: var(--secondary-font-color);
   padding-right: 10px;
@@ -696,6 +784,7 @@ input#edit-task-title-input.task-title-input {
   white-space: normal;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
 
 textarea {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -707,10 +796,12 @@ textarea {
   resize: vertical;
 }
 
+
 input {
   color: var(--primary-font-color);
   padding: 10px;
 }
+
 
 /* filter */
 #filterDiv {
@@ -722,7 +813,9 @@ input {
   z-index: 2;
 }
 
+
 /* Toggle Section */
+
 
 .toggle-div {
   display: flex;
@@ -734,21 +827,25 @@ input {
   margin-right: 30px;
 }
 
+
 #icon-light {
   margin-left: 15px;
   width: 22px;
 }
+
 
 #icon-dark {
   margin-right: 10px;
   width: 22px;
 }
 
+
 input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
+
 
 #label-checkbox-theme {
   cursor: pointer;
@@ -760,6 +857,7 @@ input[type="checkbox"] {
   border-radius: 100px;
   position: relative;
 }
+
 
 #label-checkbox-theme:after {
   content: "";
@@ -773,71 +871,88 @@ input[type="checkbox"] {
   transition: 0.3s;
 }
 
+
 input:checked + #label-checkbox-theme {
   background: #e9b824;
 }
+
 
 input:checked + #label-checkbox-theme:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
 
+
 #label-checkbox-theme:active:after {
   width: 50px;
 }
+
 
 .header-name-div {
   display: flex;
 }
 
+
 .dropdownBtn {
   display: none;
 }
+
 
 .side-bar.show-sidebar {
   display: flex !important;
 }
 
+
 .logo-mobile {
   display: none;
 }
+
 
 @media screen and (max-width: 800px) {
   /* .task-div {
         width: 450px;
     } */
 
+
   /* .side-bar.show-sidebar {
     display: none !important;
   }
+
+
 
 
   .container {
     max-width: 100%;
   }
 
+
   #header-board-name {
     font-size: 12px;
   } */
+
 
   .side-bar.show-sidebar {
     position: fixed;
     height: auto;
   }
 
+
   #layout {
     margin: 0;
     padding: 0;
   }
 
+
   #edit-btn {
     right: 0px;
   }
+
 
   #filterDiv {
     height: 100%;
     position: fixed;
   }
+
 
   .dropdownBtn {
     display: block;
@@ -847,10 +962,12 @@ input:checked + #label-checkbox-theme:after {
     padding: 0;
   }
 
+
   .logo-mobile {
     display: block;
     margin-right: 10px;
   }
+
 
   body {
     font-size: 0.8rem;
@@ -859,14 +976,17 @@ input:checked + #label-checkbox-theme:after {
     box-sizing: border-box;
   }
 
+
   #headline-sidepanel {
     padding-left: 15px;
   }
+
 
   .boards-nav-links-div {
     gap: 0;
     height: 100%;
   }
+
 
   .board-btn {
     font-size: 0.8rem;
@@ -875,15 +995,18 @@ input:checked + #label-checkbox-theme:after {
     font-weight: 700;
   }
 
+
   #create-board-btn {
     padding-left: 15px;
     font-size: 0.8rem;
     font-weight: 700;
   }
 
+
   #side-logo-div {
     display: none;
   }
+
 
   .side-bar-bottom {
     height: 100%;
@@ -891,9 +1014,11 @@ input:checked + #label-checkbox-theme:after {
     margin-top: 0;
   }
 
+
   .hide-side-bar-div {
     display: none;
   }
+
 
   .toggle-div {
     margin: 0;
@@ -906,9 +1031,11 @@ input:checked + #label-checkbox-theme:after {
     box-sizing: border-box;
   }
 
+
   #label-checkbox-theme {
     right: 16px;
   }
+
 
   #icon-dark {
     width: 20px;
@@ -916,15 +1043,18 @@ input:checked + #label-checkbox-theme:after {
     margin: 0;
   }
 
+
   #icon-light {
     width: 23px;
     height: 23px;
     margin: 0;
   }
 
+
   #headline-sidepanel {
     padding-bottom: 10px;
   }
+
 
   .side-bar {
     display: none;
@@ -943,6 +1073,7 @@ input:checked + #label-checkbox-theme:after {
     z-index: 10;
   }
 
+
   .container {
     height: auto;
     padding: 0;
@@ -951,12 +1082,14 @@ input:checked + #label-checkbox-theme:after {
     box-sizing: border-box;
   }
 
+
   .card-column-main {
     height: auto;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
+
 
   #header {
     top: 0;
@@ -968,6 +1101,7 @@ input:checked + #label-checkbox-theme:after {
     border: none;
   }
 
+
   #edit-board-btn {
     top: 17px;
     display: flex;
@@ -975,15 +1109,18 @@ input:checked + #label-checkbox-theme:after {
     padding: 0;
   }
 
+
   #three-dots-icon {
     padding: 0;
     margin: 0;
   }
 
+
   #add-new-task-btn {
     font-size: 0;
     padding: 12px;
   }
+
 
   #editBoardDiv {
     margin: 0;
@@ -996,13 +1133,17 @@ input:checked + #label-checkbox-theme:after {
     height: 30px;
   }
 
+
   .header-board-name {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+
 .header-board-name {
   font-family: 'IBM Plex Sans', sans-serif;
 }
+
+
 
 
   #deleteBoardBtn {
@@ -1011,40 +1152,53 @@ input:checked + #label-checkbox-theme:after {
   }
 
 
+
+
   #header-board-name {
     font-size: 16px;
   }
+
 
   .column-div {
     padding: 18px;
     width: 100%;
   }
 
+
   .task-div {
     height: 70px;
   }
+
 
   .modal-window {
     width: 95%;
   }
 
+
   .columnHeader {
     font-size: 12px;
   }
+
 
   .dot {
     height: 8px;
     width: 8px;
   }
 
+
   .column-head-div {
     gap: 8px;
   }
+
 
   .edit-task-modal-window {
     width: 95%;
   }
 }
+
+
+
+
 
 
 
@@ -1055,6 +1209,7 @@ input:checked + #label-checkbox-theme:after {
     height: auto;
   }
 
+
   #layout {
     /* width: 100%; */
     /* border: 2px solid rgb(62, 193, 48); */
@@ -1062,14 +1217,17 @@ input:checked + #label-checkbox-theme:after {
     padding: 0;
   }
 
+
   #edit-btn {
     right: 0px;
   }
+
 
   #filterDiv {
     height: 100%;
     position: fixed;
   }
+
 
   .dropdownBtn {
     display: block;
@@ -1079,10 +1237,12 @@ input:checked + #label-checkbox-theme:after {
     padding: 0;
   }
 
+
   .logo-mobile {
     display: block;
     margin-right: 10px;
   }
+
 
   body {
     font-size: 0.8rem;
@@ -1091,14 +1251,17 @@ input:checked + #label-checkbox-theme:after {
     box-sizing: border-box;
   }
 
+
   #headline-sidepanel {
     padding-left: 15px;
   }
+
 
   .boards-nav-links-div {
     gap: 0;
     height: 100%;
   }
+
 
   .board-btn {
     font-size: 0.8rem;
@@ -1107,15 +1270,18 @@ input:checked + #label-checkbox-theme:after {
     font-weight: 700;
   }
 
+
   #create-board-btn {
     padding-left: 15px;
     font-size: 0.8rem;
     font-weight: 700;
   }
 
+
   #side-logo-div {
     display: none;
   }
+
 
   .side-bar-bottom {
     height: 100%;
@@ -1123,9 +1289,11 @@ input:checked + #label-checkbox-theme:after {
     margin-top: 0;
   }
 
+
   .hide-side-bar-div {
     display: none;
   }
+
 
   .toggle-div {
     /* width: 120px;
@@ -1144,12 +1312,14 @@ input:checked + #label-checkbox-theme:after {
     box-sizing: border-box;
   }
 
+
   #label-checkbox-theme {
     /* width: 50px; */
     /* height: 2px; */
     right: 16px;
     /* border: 2px solid yellow; */
   }
+
 
   #icon-dark {
     width: 20px;
@@ -1159,15 +1329,18 @@ input:checked + #label-checkbox-theme:after {
     /* border: 2px solid blue; */
   }
 
+
   #icon-light {
     width: 23px;
     height: 23px;
     margin: 0;
   }
 
+
   #headline-sidepanel {
     padding-bottom: 10px;
   }
+
 
   .side-bar {
     display: none;
@@ -1188,6 +1361,7 @@ input:checked + #label-checkbox-theme:after {
     z-index: 10;
   }
 
+
   .container {
     /* border: 2px solid red; */
     height: auto;
@@ -1199,6 +1373,7 @@ input:checked + #label-checkbox-theme:after {
     /* border: 2px solid yellow; */
   }
 
+
   .card-column-main {
     height: auto;
     flex-direction: column;
@@ -1206,6 +1381,7 @@ input:checked + #label-checkbox-theme:after {
     padding: 0;
     /* border: 2px solid red; */
   }
+
 
   #header {
     top: 0;
@@ -1218,6 +1394,7 @@ input:checked + #label-checkbox-theme:after {
     border: none;
   }
 
+
   #edit-board-btn {
     top: 17px;
     display: flex;
@@ -1226,15 +1403,18 @@ input:checked + #label-checkbox-theme:after {
     padding: 0;
   }
 
+
   #three-dots-icon {
     padding: 0;
     margin: 0;
   }
 
+
   #add-new-task-btn {
     font-size: 0;
     padding: 12px;
   }
+
 
   #editBoardDiv {
     margin: 0;
@@ -1248,10 +1428,12 @@ input:checked + #label-checkbox-theme:after {
     height: 30px;
   }
 
+
   #deleteBoardBtn {
     font-size: 12px;
     font-weight: 500;
   }
+
 
   #add-new-task-btn::before {
     content: "+";
@@ -1263,9 +1445,11 @@ input:checked + #label-checkbox-theme:after {
     padding-bottom: 0;
   }
 
+
   #header-board-name {
     font-size: 16px;
   }
+
 
   .column-div {
     /* padding: 18px; */
@@ -1274,32 +1458,39 @@ input:checked + #label-checkbox-theme:after {
     /* box-sizing: border-box; */
   }
 
+
   .task-div {
     height: 70px;
     /* box-sizing: border-box; */
   }
 
+
   .modal-window {
     width: 95%;
   }
 
+
   .columnHeader {
     font-size: 12px;
   }
+
 
   .dot {
     height: 8px;
     width: 8px;
   }
 
+
   .column-head-div {
     gap: 8px;
   }
+
 
   .edit-task-modal-window {
     width: 95%;
   }
 }
+
 
 /* Tablets */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -1307,39 +1498,49 @@ input:checked + #label-checkbox-theme:after {
     font-size: 16px;
   }
 
+
   .container {
     /* max-width: 100%;  */
     padding-left: 20px;
     padding-right: 20px;
   }
 
+
   #header {
     padding-left: 20px;
     padding-right: 20px;
   }
+
 
   #add-new-task-btn {
     font-size: 16px;
     padding: 18px;
   }
 
+
   .column-div {
     padding: 40px;
   }
+
 
   .task-div {
     height: 110px;
     margin-bottom: 15px;
   }
 
+
   .modal-window {
     width: 70%;
   }
+
 
   h2 {
     font-size: 1em;
   }
 }
+
+
+
 
 
 
@@ -1349,29 +1550,35 @@ input:checked + #label-checkbox-theme:after {
     font-size: 16px;
   }
 
+
   .container {
     max-width: 100%;
     padding-left: 35px;
     padding-right: 35px;
   }
 
+
   #header {
     padding-left: 30px;
     padding-right: 35px;
   }
+
 
   #add-new-task-btn {
     font-size: 16px;
     padding: 20px;
   }
 
+
   .column-div {
     padding: 60px;
   }
 
+
   .task-div {
     height: 80px;
   }
+
 
   .modal-window {
     width: 30%;
@@ -1384,39 +1591,47 @@ input:checked + #label-checkbox-theme:after {
   }
 }
 
+
 @media screen and (min-width: 2560px) {
   body {
     font-size: 16px;
   }
 
+
   .side-bar {
     width: 350px;
   }
+
 
   .container {
     padding-left: 50px;
     padding-right: 50px;
   }
 
+
   #header {
     padding-left: 40px;
     padding-right: 50px;
   }
+
 
   #add-new-task-btn {
     font-size: 18px;
     padding: 20px;
   }
 
+
   .column-div {
     padding: 60px;
   }
+
 
   .task-div {
     height: 90px;
     width: 90%;
     font-size: 16px;
   }
+
 
   .modal-window {
     width: 30%;
